@@ -1,7 +1,7 @@
 ---
 title: 'Reviews | HCL Construction'
-description: 'Meta description for the page'
-preloadImg: '/assets/images/banner.jpg'
+description: 'Read reviews from Duluth homeowners who chose HCL Construction for roofing, siding, exterior inspections, repairs, and home improvement projects.'
+preloadImg: '/assets/images/hcl-hero-2.jpg'
 permalink: 'reviews/'
 eleventyNavigation:
     key: Reviews
@@ -16,84 +16,180 @@ eleventyNavigation:
 
 {% block body %}
 
-    <!-- ============================================ -->
-    <!--                    LANDING                   -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
 
-    <section id="int-hero">
-        <h1 id="home-h">Verified Reviews</h1>
-        <picture>
-            <source media="(max-width: 600px)" srcset="/assets/images/banner.jpg">
-            <source media="(min-width: 601px)" srcset="/assets/images/banner.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/banner.jpg" alt="grass" loading="eager" width="2500" height="1667">
-        </picture>
-    </section>
+<section id="int-hero">
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" srcset="/assets/images/hcl-hero-2.jpg">
+        <source media="(min-width: 601px)" srcset="/assets/images/hcl-hero-2.jpg">
+        <img
+            aria-hidden="true"
+            decoding="async"
+            src="/assets/images/hcl-hero-2.jpg"
+            alt="completed roofing project on a home in Northern Minnesota"
+            loading="eager"
+            width="2500"
+            height="1667"
+        >
+    </picture>
 
-    <!-- ============================================ -->
-    <!--                  Reviews                     -->
-    <!-- ============================================ -->
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Verified Reviews</span>
 
-    <section id="reviews">
-        <div class="container">
-            <div class="review">
-                <picture>
-                    <img class="profile" loading="lazy" decoding="async" src="/assets/images/google-logo.webp" alt="google logo" width="99" height="99">
-                </picture>
-                <p>
-                    Colten has done a lot of work around my house over the last couple years. He has resided my house (vinyl siding), replaced the roof, installed new front and rear exterior door, built a new deck, and replaced a window. I am very happy with how the projects turned out. Colten was professional and handled things in a timely manor. If there were any issues or things he noticed, he brought them to my attention and we discussed options for a solution. I would recommend HCL and would hire again.
-                </p>
-                <div class="star-group">
-                    <span class="name">Micade Devlin<span class="desc">Google</span></span>
-                    <picture>
-                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
-                    </picture>
-                </div>
-            </div>
-            <div class="review">
-                <picture>
-                    <img class="profile" loading="lazy" decoding="async" src="/assets/images/google-logo.webp" alt="google logo" width="99" height="99">
-                </picture>
-                <p>
-                    HCL Construction recently installed a new roof for me after I had major hail damage. I am very satisfied with job Colten did. He was very professional and easy to work with. I was given a fair price and the job was completed quickly. When the job was done the site was cleaned up perfectly. My roof looks great and very happy with the work that was done. Very Highly recommend!
-                </p>
-                <div class="star-group">
-                    <span class="name">Angela Stahl<span class="desc">Google</span></span>
-                    <picture>
-                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
-                    </picture>
-                </div>
-            </div>
-            <div class="review">
-                <picture>
-                    <img class="profile" loading="lazy" decoding="async" src="/assets/images/google-logo.webp" alt="google logo" width="99" height="99">
-                </picture>
-                <p>
-                    When we were looking for someone to do our roof, we found Colten on the Nextdoor app. After meeting with him, we hired him for our roof and we couldn’t be any happier! Colten is very knowledgeable, honest, affordable and easy to work with. He shows up on time and is there on the day he says he will be. We have him coming back to do a basement door and some dry wall in the near future. I cannot recommend this company enough!
-                </p>
-                <div class="star-group">
-                    <span class="name">Breanna Atallian<span class="desc">Google</span></span>
-                    <picture>
-                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
-                    </picture>
-                </div>
-            </div>
-            <div class="review">
-                <picture>
-                    <img class="profile" loading="lazy" decoding="async" src="/assets/images/google-logo.webp" alt="google logo" width="99" height="99">
-                </picture>
-                <p>
-                    Great job! Give them a try.
-                </p>
-                <div class="star-group">
-                    <span class="name">Teresa Cozzi<span class="desc">Google</span></span>
-                    <picture>
-                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
-                    </picture>
-                </div>
+            <h1 class="cs-title">What Duluth Homeowners Have to Say</h1>
+
+            <p class="cs-text">
+                See what our customers have to say about our roofing, siding, and exterior work. We're proud to earn trust through quality work, honest communication, and lasting results. 
+            </p>
+
+            <div class="cs-button-group">
+                <a href="/#cta-1235" class="cs-button-solid">
+                   Get a Free Inspection
+                </a>
+
+                <a href="/contact/" class="cs-button-transparent">
+                    Contact Us
+                </a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    {% include 'components/cta.html' %}
+<!-- ============================================ -->
+<!--                  Reviews                     -->
+<!-- ============================================ -->
+
+<section id="reviews">
+    <div class="cs-container">
+        <div class="cs-review-grid">
+            <article class="cs-review-card">
+                <div class="cs-review-top">
+                    <img class="cs-google" loading="lazy" decoding="async" src="/assets/images/google-logo.webp" alt="Google logo" width="36" height="36">
+                    <img class="cs-stars" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="5 star rating" width="91" height="15">
+                </div>
+
+                <p class="cs-review-text">
+                    HCL Construction recently installed a new roof for me after I had major hail damage. I am very satisfied with job Colten did. He was very professional and easy to work with. I was given a fair price and the job was completed quickly. When the job was done the site was cleaned up perfectly. My roof looks great and very happy with the work that was done. Very Highly recommend!
+                </p>
+
+                <div class="cs-review-bottom">
+                    <span class="cs-name">Angela Stahl</span>
+                    <span class="cs-source">Google</span>
+                </div>
+            </article>
+
+            <article class="cs-review-card">
+                <div class="cs-review-top">
+                    <img class="cs-google" loading="lazy" decoding="async" src="/assets/images/google-logo.webp" alt="Google logo" width="36" height="36">
+                    <img class="cs-stars" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="5 star rating" width="91" height="15">
+                </div>
+
+                <p class="cs-review-text">
+                    Colten has done a lot of work around my house over the last couple years. He has resided my house (vinyl siding), replaced the roof, installed new front and rear exterior door, built a new deck, and replaced a window. I am very happy with how the projects turned out. Colten was professional and handled things in a timely manor. If there were any issues or things he noticed, he brought them to my attention and we discussed options for a solution. I would recommend HCL and would hire again.
+                </p>
+
+                <div class="cs-review-bottom">
+                    <span class="cs-name">Micade Devlin</span>
+                    <span class="cs-source">Google</span>
+                </div>
+            </article>
+
+            <article class="cs-review-card">
+                <div class="cs-review-top">
+                    <img class="cs-google" loading="lazy" decoding="async" src="/assets/images/google-logo.webp" alt="Google logo" width="36" height="36">
+                    <img class="cs-stars" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="5 star rating" width="91" height="15">
+                </div>
+
+                <p class="cs-review-text">
+                    When we were looking for someone to do our roof, we found Colten on the Nextdoor app. After meeting with him, we hired him for our roof and we couldn’t be any happier! Colten is very knowledgeable, honest, affordable and easy to work with. He shows up on time and is there on the day he says he will be. We have him coming back to do a basement door and some dry wall in the near future. I cannot recommend this company enough!
+                </p>
+
+                <div class="cs-review-bottom">
+                    <span class="cs-name">Breanna Atallian</span>
+                    <span class="cs-source">Google</span>
+                </div>
+            </article>
+
+            <article class="cs-review-card">
+                <div class="cs-review-top">
+                    <img class="cs-google" loading="lazy" decoding="async" src="/assets/images/google-logo.webp" alt="Google logo" width="36" height="36">
+                    <img class="cs-stars" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="5 star rating" width="91" height="15">
+                </div>
+
+                <p class="cs-review-text">
+                   My experience with Colten and his crew - HCL Construction was exceptional. They did some extensive repairs and re-shingled my large garage with 3 attached sheds in two days! The prices were also very reasonable. They worked hard in the rain at times and being in the woods, contended with many mosquitoes and flies while they worked. I would highly recommend HCL Construction.
+                </p>
+
+                <div class="cs-review-bottom">
+                    <span class="cs-name">Beth Chapdelaine</span>
+                    <span class="cs-source">Google</span>
+                </div>
+            </article>
+
+            <article class="cs-review-card">
+                <div class="cs-review-top">
+                    <img class="cs-google" loading="lazy" decoding="async" src="/assets/images/google-logo.webp" alt="Google logo" width="36" height="36">
+                    <img class="cs-stars" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="5 star rating" width="91" height="15">
+                </div>
+
+                <p class="cs-review-text">
+                    Colten at HCL was personable straightforward reasonably priced and communicated well. The work looks great.
+                </p>
+
+                <div class="cs-review-bottom">
+                    <span class="cs-name">Kevin K</span>
+                    <span class="cs-source">Google</span>
+                </div>
+            </article>
+
+            <article class="cs-review-card">
+                <div class="cs-review-top">
+                    <img class="cs-google" loading="lazy" decoding="async" src="/assets/images/google-logo.webp" alt="Google logo" width="36" height="36">
+                    <img class="cs-stars" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="5 star rating" width="91" height="15">
+                </div>
+
+                <p class="cs-review-text">
+                    Great job! Give them a try.
+                </p>
+
+                <div class="cs-review-bottom">
+                    <span class="cs-name">Teresa Cozzi</span>
+                    <span class="cs-source">Google</span>
+                </div>
+            </article>
+        </div>
+
+        <!-- <article class="cs-featured-review">
+            <div class="cs-featured-content">
+                <span class="cs-quote" aria-hidden="true">”</span>
+
+                <div class="cs-featured-copy">
+                    <span class="cs-featured-topper">Featured Review</span>
+                    <h3 class="cs-featured-title">“The whole experience from start to finish was excellent.”</h3>
+                    <p class="cs-featured-text">
+                        From the initial inspection to the final cleanup, HCL Construction delivered exactly what they promised—and more. Colten is honest, responsive, and truly cares about his customers.
+                    </p>
+                </div>
+            </div>
+
+            <div class="cs-featured-author">
+                <div class="cs-featured-rating">
+                    <img class="cs-google" loading="lazy" decoding="async" src="/assets/images/google-logo.webp" alt="Google logo" width="36" height="36">
+                    <img class="cs-stars" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="5 star rating" width="91" height="15">
+                </div>
+
+                <div class="cs-featured-name-group">
+                    <span class="cs-name">Derek W.</span>
+                    <span class="cs-source">Google</span>
+                </div>
+            </div>
+        </article> -->
+    </div>
+</section>
+
+    {% include 'components/inter-cta.html' %}
 
 {% endblock %}

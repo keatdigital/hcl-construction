@@ -5,141 +5,305 @@
 @media only screen and (min-width: 0rem) {
   #gallery-1086 {
     padding: var(--sectionPadding);
-    background: var(--secondary);
+    padding-top: clamp(5rem, 10vw, 7rem);
+    padding-bottom: clamp(5rem, 10vw, 7rem);
+    background: var(--secondaryLight);
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
   }
   #gallery-1086 .cs-container {
     width: 100%;
-    max-width: 80rem;
+    max-width: 90rem;
     margin: auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    /* 48px - 64px */
-    gap: clamp(3rem, 6vw, 4rem);
+    gap: clamp(1.5rem, 4vw, 2rem);
   }
-  #gallery-1086 .cs-content {
-    /* set text align to left if content needs to be left aligned */
-    text-align: center;
+  #gallery-1086 .cs-heading-row {
     width: 100%;
     display: flex;
     flex-direction: column;
-    /* centers content horizontally, set to flex-start to left align */
-    align-items: center;
+    align-items: flex-start;
+    gap: clamp(1.25rem, 3vw, 1.75rem);
+  }
+  #gallery-1086 .cs-content {
+    width: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #gallery-1086 .cs-topper {
+    font-size: clamp(0.75rem, 1.2vw, 0.875rem);
+    line-height: 1.2em;
+    font-weight: 800;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    margin: 0 0 0.5rem;
+    color: var(--primary);
+    display: block;
   }
   #gallery-1086 .cs-title {
+    font-size: clamp(2rem, 5vw, 3rem);
+    line-height: 1.05em;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    max-width: 43.75rem;
     margin: 0;
+    color: #fff;
+  }
+  #gallery-1086 .cs-filter-group {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.625rem;
+  }
+  #gallery-1086 .cs-filter-button {
+    min-height: 2.625rem;
+    padding: 0 1.125rem;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 0.375rem;
+    background: rgba(255, 255, 255, 0.035);
+    color: rgba(255, 255, 255, 0.86);
+    font-size: 0.875rem;
+    line-height: 1;
+    font-weight: 700;
+    font-family: inherit;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s, box-shadow 0.3s;
+  }
+  #gallery-1086 .cs-filter-button:hover {
+    border-color: rgba(0, 255, 24, 0.45);
+    background: rgba(0, 255, 24, 0.06);
+    color: var(--primary);
+  }
+  #gallery-1086 .cs-filter-button.cs-active {
+    border-color: var(--primary);
+    background: var(--primary);
+    color: var(--secondaryLight);
+    box-shadow: 0 0 1.25rem rgba(0, 255, 24, 0.18);
   }
   #gallery-1086 .cs-image-group {
     width: 100%;
-    /* changes to 1280px at large desktop */
-    max-width: 49rem;
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(20, minmax(9vw, 1fr));
-    /* 16px - 20px */
-    gap: clamp(1rem, 2vw, 1.25rem);
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
   }
   #gallery-1086 .cs-picture {
     width: 100%;
-    height: 100%;
+    height: clamp(14rem, 62vw, 22rem);
+    border-radius: 0.375rem;
+    overflow: hidden;
     display: block;
     position: relative;
+    background: rgba(255, 255, 255, 0.04);
+    cursor: zoom-in;
+    transform: translateY(0) scale(1);
+    transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  #gallery-1086 .cs-picture.cs-hidden {
+    display: none;
+  }
+  #gallery-1086 .cs-picture.cs-filter-in {
+    animation: galleryFilterIn 0.45s ease both;
+  }
+  #gallery-1086 .cs-picture:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 0.25rem;
   }
   #gallery-1086 .cs-picture img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     position: absolute;
-    top: 0;
-    left: 0;
+    inset: 0;
+    transition: transform 0.6s ease, filter 0.6s ease;
   }
-  #gallery-1086 .cs-picture1 {
-    grid-column: 1 / span 6;
-    grid-row: span 4;
+  #gallery-1086 .cs-picture:hover {
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.22);
   }
-  #gallery-1086 .cs-picture2 {
-    grid-column: 7 / span 6;
-    grid-row: span 5;
-  }
-  #gallery-1086 .cs-picture3 {
-    grid-column: 1 / span 6;
-    grid-row: 5 / span 6;
-  }
-  #gallery-1086 .cs-picture4 {
-    grid-column: 7 / span 6;
-    grid-row: 6 / span 5;
-  }
-  #gallery-1086 .cs-picture5 {
-    grid-column: 1 / span 6;
-    grid-row: 11 / span 4;
-  }
-  #gallery-1086 .cs-picture6 {
-    grid-column: 7 / span 6;
-    grid-row: 11 / span 5;
-  }
-  #gallery-1086 .cs-picture7 {
-    grid-column: 1 / span 6;
-    grid-row: 15 / span 6;
-  }
-  #gallery-1086 .cs-picture8 {
-    grid-column: 7 / span 6;
-    grid-row: 16 / span 5;
+  #gallery-1086 .cs-picture:hover img {
+    transform: scale(1.035);
+    filter: saturate(1.05) contrast(1.05);
   }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
+  #gallery-1086 .cs-heading-row {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  #gallery-1086 .cs-content {
+    width: auto;
+  }
+  #gallery-1086 .cs-filter-group {
+    width: auto;
+    justify-content: flex-end;
+  }
   #gallery-1086 .cs-image-group {
-    grid-template-rows: repeat(20, minmax(6rem, 1fr));
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 14.375rem;
   }
-}
-/* Large Desktop 1300px */
-@media only screen and (min-width: 81.25rem) {
-  #gallery-1086 .cs-image-group {
-    max-width: 80rem;
-    height: 49.0625rem;
-    grid-template-rows: repeat(12, 1fr);
-  }
-  #gallery-1086 .cs-picture1 {
-    grid-column: 1 / span 3;
-    grid-row: 1 / span 7;
-  }
-  #gallery-1086 .cs-picture2 {
-    grid-column: 4 / span 3;
-    grid-row: 1 / span 10;
-  }
-  #gallery-1086 .cs-picture3 {
-    grid-column: 7 / span 3;
-    grid-row: 1 / span 5;
-  }
-  #gallery-1086 .cs-picture4 {
-    grid-column: 10 / span 3;
-    grid-row: 1 / span 7;
-  }
-  #gallery-1086 .cs-picture5 {
-    grid-column: 1 / span 3;
-    grid-row: 8 / span 13;
-  }
-  #gallery-1086 .cs-picture6 {
-    grid-column: 4 / span 3;
-    grid-row: 11 / span 10;
-  }
-  #gallery-1086 .cs-picture7 {
-    grid-column: 7 / span 3;
-    grid-row: 6 / span 15;
+  #gallery-1086 .cs-picture {
+    height: 100%;
   }
   #gallery-1086 .cs-picture8 {
-    grid-column: 10 / span 3;
-    grid-row: 8 / span 13;
+    grid-column: span 2;
+  }
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #gallery-1086 .cs-image-group {
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: clamp(5.5rem, 7.5vw, 7.625rem);
+    grid-auto-flow: dense;
+    gap: 0.75rem;
+  }
+  #gallery-1086 .cs-picture {
+    height: 100%;
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+  #gallery-1086 .cs-pattern-1 {
+    grid-column: 1 / span 1;
+    grid-row: span 2;
+  }
+  #gallery-1086 .cs-pattern-2 {
+    grid-column: 2 / span 1;
+    grid-row: span 2;
+  }
+  #gallery-1086 .cs-pattern-3 {
+    grid-column: 3 / span 1;
+    grid-row: span 1;
+  }
+  #gallery-1086 .cs-pattern-4 {
+    grid-column: 4 / span 1;
+    grid-row: span 2;
+  }
+  #gallery-1086 .cs-pattern-5 {
+    grid-column: 5 / span 1;
+    grid-row: span 2;
+  }
+  #gallery-1086 .cs-pattern-6 {
+    grid-column: 1 / span 1;
+    grid-row: span 2;
+  }
+  #gallery-1086 .cs-pattern-7 {
+    grid-column: 2 / span 1;
+    grid-row: span 2;
+  }
+  #gallery-1086 .cs-pattern-8 {
+    grid-column: 3 / span 1;
+    grid-row: span 3;
+  }
+  #gallery-1086 .cs-pattern-9 {
+    grid-column: 4 / span 2;
+    grid-row: span 2;
+  }
+}
+/* Large Desktop - 1300px */
+@media only screen and (min-width: 81.25rem) {
+  #gallery-1086 .cs-image-group {
+    grid-auto-rows: 7.625rem;
+  }
+}
+@keyframes galleryFilterIn {
+  from {
+    opacity: 0;
+    transform: translateY(0.875rem) scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
   }
 }
 /*-- -------------------------- -->
-<---            CTA             -->
+<---       Gallery Modal        -->
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #cta-52 {
-    padding: 0rem 1rem clamp(3.75rem, 7.82vw, 6.25rem);
+  body.cs-modal-open {
+    overflow: hidden;
+  }
+  .cs-gallery-modal {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    background: rgba(5, 8, 12, 0.84);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-sizing: border-box;
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    inset: 0;
+    z-index: 100000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+  .cs-gallery-modal.cs-open {
+    opacity: 1;
+    visibility: visible;
+  }
+  .cs-gallery-modal.cs-open .cs-modal-dialog {
+    opacity: 1;
+    transform: scale(1);
+  }
+  .cs-modal-dialog {
+    width: 100%;
+    max-width: 68.75rem;
+    max-height: 88vh;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 0.875rem;
+    background: rgba(13, 19, 31, 0.96);
+    box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.45);
+    overflow: hidden;
     position: relative;
-    background: var(--secondary);
+    opacity: 0;
+    transform: scale(0.96);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  .cs-modal-img {
+    width: 100%;
+    height: auto;
+    max-height: 88vh;
+    object-fit: contain;
+    display: block;
+  }
+  .cs-modal-close {
+    width: 2.75rem;
+    height: 2.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 50%;
+    background: rgba(13, 19, 31, 0.82);
+    color: #fff;
+    font-size: 2rem;
+    line-height: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0.875rem;
+    right: 0.875rem;
+    z-index: 2;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+  }
+  .cs-modal-close:hover {
+    border-color: rgba(0, 255, 24, 0.55);
+    background: rgba(0, 255, 24, 0.08);
+    color: var(--primary);
+  }
+  .cs-modal-close:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 0.25rem;
   }
 }

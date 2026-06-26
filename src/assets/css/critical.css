@@ -5,197 +5,325 @@
 @media only screen and (min-width: 0rem) {
   #hero-1618 {
     padding: var(--sectionPadding);
-    /* 200px - 300px - leaving extra space for the navigation */
-    padding-top: clamp(12.5rem, 31.95vw, 18.75rem);
+    padding-top: clamp(10rem, 22vw, 14rem);
+    padding-bottom: clamp(2.5rem, 5vw, 4rem);
+    min-height: clamp(48rem, 72vw, 58rem);
     position: relative;
     z-index: 1;
-    background: var(--secondary);
+    overflow: visible;
+    background: var(--secondaryLight);
   }
   #hero-1618 .cs-container {
     width: 100%;
-    max-width: 80rem;
+    max-width: 90rem;
     margin: auto;
-    margin-top: -3rem;
+    position: relative;
+    z-index: 2;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    /* 60px - 180px */
-    gap: clamp(3.75rem, 13vw, 11.25rem);
+    align-items: center;
+    gap: clamp(3rem, 5vw, 4.5rem);
   }
   #hero-1618 .cs-content {
-    /* set text align to left if content needs to be left aligned */
-    text-align: left;
     width: 100%;
-    max-width: 48.75rem;
+    max-width: 65rem;
     display: flex;
     flex-direction: column;
-    /* centers content horizontally, set to flex-start to left align */
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
   }
   #hero-1618 .cs-topper {
-    /* 13px - 16px */
-    font-size: clamp(0.8125rem, 1.5vw, 1rem);
+    font-size: clamp(0.8125rem, 1.25vw, 1rem);
     line-height: 1.2em;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    text-align: center;
+    font-weight: 600;
+    letter-spacing: 0.22em;
     text-transform: uppercase;
-    margin-bottom: 0.25rem;
+    margin-bottom: clamp(1rem, 2vw, 1.25rem);
     color: var(--primary);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-    position: relative;
+    display: block;
+    text-shadow: 0 0 1rem rgba(0, 255, 24, 0.18);
   }
   #hero-1618 .cs-title {
-    /* 39px - 61px */
-    font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
-    font-weight: 700;
-    line-height: 1.2em;
+    font-size: clamp(3rem, 7vw, 5.75rem);
+    font-weight: 600;
     text-align: inherit;
-    max-width: 100%;
-    margin: 0 0 1.875rem 0;
+    max-width: 59.375rem;
+    margin: 0;
     color: #fff;
+    text-shadow: 0 0.1875rem 1rem rgba(0, 0, 0, 0.45);
     position: relative;
+  }
+  #hero-1618 .cs-title-line {
+    width: 7rem;
+    height: 0.125rem;
+    margin: clamp(1.5rem, 3vw, 2rem) auto clamp(1.5rem, 3vw, 2rem);
+    background: var(--primary);
+    box-shadow: 0 0 1rem rgba(0, 255, 24, 0.3);
+    display: block;
   }
   #hero-1618 .cs-text {
-    /* 16px - 20px */
-    font-size: clamp(1rem, 1.95vw, 1.25rem);
-    line-height: 1.5em;
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+    line-height: 1.55em;
     text-align: inherit;
     width: 100%;
-    /* 464px - 622px */
-    max-width: clamp(29rem, 60vw, 38.785rem);
-    margin: 0 0 2.5rem 0;
-    color: #fff;
+    max-width: 53.125rem;
+    margin: 0 0 clamp(2rem, 4vw, 2.75rem);
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 0 0.125rem 0.75rem rgba(0, 0, 0, 0.45);
   }
-  #hero-1618 .cs-card-group {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    /* 16px - 20px */
-    gap: clamp(1rem, 2.3vw, 1.25rem);
-  }
-  #hero-1618 .cs-item {
-    width: 100%;
-    text-align: left;
-    list-style: none;
-    margin: 0;
-    /* 24px - 32px */
-    padding: clamp(1.5rem, 3vw, 2rem);
-    background-color: var(--secondaryLight);
-    box-shadow: 2px 2px 10px #09090911;
-    /* prevents padding from affecting height and width */
-    box-sizing: border-box;
-    grid-column: span 12;
-    grid-row: span 1;
+  #hero-1618 .cs-button-group {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
-    position: relative;
-    z-index: 1;
-    transition: transform 0.3s, box-shadow 0.3s;
+    gap: 1rem;
+    margin-bottom: clamp(3.5rem, 7vw, 5rem);
   }
-  #hero-1618 .cs-item:hover {
-    transform: translateY(-0.5rem);
-    box-shadow: 2px 2px 10px #0909092f;
+  #hero-1618 .cs-button-solid,
+  #hero-1618 .cs-button-transparent {
+    min-height: 3.5rem;
+    padding: 0 clamp(1.25rem, 3vw, 2rem);
+    border-radius: 0.375rem;
+    font-size: clamp(0.875rem, 1.4vw, 1rem);
+    line-height: 1;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.875rem;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, border-color 0.3s ease, background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
   }
-  #hero-1618 .cs-item:hover .cs-h3 {
+  #hero-1618 .cs-button-solid {
+    background: var(--primary);
+    color: var(--secondaryLight);
+    box-shadow: 0 1rem 2.5rem rgba(0, 255, 24, 0.18);
+  }
+  #hero-1618 .cs-button-solid:hover {
+    transform: translateY(-0.125rem);
+    box-shadow: 0 1.25rem 2.75rem rgba(0, 255, 24, 0.24);
+  }
+  #hero-1618 .cs-button-transparent {
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    background: rgba(13, 19, 31, 0.38);
+    color: #fff;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+  }
+  #hero-1618 .cs-button-transparent:hover {
+    transform: translateY(-0.125rem);
+    border-color: rgba(0, 255, 24, 0.52);
+    background: rgba(0, 255, 24, 0.06);
     color: var(--primary);
   }
-  #hero-1618 .cs-h3 {
-    /* 20px - 25px */
-    font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
-    line-height: 1.2em;
-    font-weight: bold;
-    text-align: inherit;
-    margin: 0 0 1rem 0;
-    color: var(--tertiaryLight);
+  #hero-1618 .cs-card-group {
+    width: 100%;
+    max-width: 70rem;
+    margin: 0 0 clamp(-5rem, -6vw, -3.75rem);
+    padding: clamp(1.5rem, 3vw, 2rem);
+    list-style: none;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 0.875rem;
+    background: linear-gradient(145deg, rgba(20, 28, 43, 0.9), rgba(13, 19, 31, 0.92));
+    box-shadow: 0 2rem 5rem rgba(5, 8, 12, 0.38);
+    backdrop-filter: blur(6px);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+    position: relative;
+    z-index: 3;
   }
-  #hero-1618 .cs-item-text {
-    /* 14px - 16px */
-    font-size: clamp(0.875rem, 1.5vw, 1rem);
-    line-height: 1.5em;
-    max-width: 28.125rem;
+  #hero-1618 .cs-item {
+    text-align: center;
+    list-style: none;
     margin: 0;
     padding: 0;
-    color: var(--tertiaryLight);
+    background: transparent;
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    transition: none;
+  }
+  #hero-1618 .cs-icon {
+    width: 2.875rem;
+    height: 2.875rem;
+    margin-bottom: 0.875rem;
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #hero-1618 .cs-icon svg {
+    width: 100%;
+    height: 100%;
+    fill: currentColor;
+    display: block;
+  }
+  #hero-1618 .cs-h3 {
+    font-size: clamp(1.125rem, 2vw, 1.375rem);
+    line-height: 1.2em;
+    font-weight: 600;
+    text-align: inherit;
+    margin: 0 0 0.625rem;
+    color: #fff;
+  }
+  #hero-1618 .cs-item-text {
+    font-size: clamp(0.875rem, 1.4vw, 1rem);
+    line-height: 1.55em;
+    max-width: 21.25rem;
+    margin: 0 auto;
+    padding: 0;
+    color: rgba(255, 255, 255, 0.76);
   }
   #hero-1618 .cs-background {
     width: 100%;
-    height: 55%;
+    height: 100%;
+    min-height: 100%;
     display: block;
     position: absolute;
     top: 0;
     left: 0;
     z-index: -2;
+    overflow: hidden;
   }
   #hero-1618 .cs-background:before {
-    /* Overlay */
     content: '';
     width: 100%;
     height: 100%;
-    background: var(--secondary);
-    opacity: 0.8;
+    background: linear-gradient(90deg, rgba(20, 28, 43, 0.9) 0%, rgba(20, 28, 43, 0.3) 30%, rgba(20, 28, 43, 0.3) 70%, rgba(20, 28, 43, 0.9) 100%), linear-gradient(180deg, rgba(20, 28, 43, 0.9) 0%, rgba(20, 28, 43, 0.4) 38%, var(--secondaryLight) 100%);
     position: absolute;
-    display: block;
     top: 0;
     left: 0;
     z-index: 1;
-    /* prevents the cursor from interacting with it */
     pointer-events: none;
   }
-  #hero-1618 .cs-background img {
+  #hero-1618 .cs-background:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(20, 24, 31, 0.18) 0%, rgba(20, 24, 31, 0.1) 38%, rgba(20, 24, 31, 0.2) 64%, var(--secondaryLight) 100%);
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+  }
+  #hero-1618 .cs-background img {
     width: 100%;
+    height: 100%;
     object-fit: cover;
-    /* makes the top of the image start at the top of the parent */
-    object-position: top;
+    object-position: 54% center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: saturate(0.95) contrast(1.16) brightness(0.8);
   }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
   #hero-1618 {
-    padding-bottom: 0;
+    min-height: 53.125rem;
   }
-  #hero-1618 .cs-container {
-    align-items: flex-start;
-  }
-  #hero-1618 .cs-content {
-    text-align: left;
-    margin-left: 0;
-    align-items: flex-start;
+  #hero-1618 .cs-card-group {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    margin-bottom: clamp(-5.5rem, -6vw, -4rem);
   }
   #hero-1618 .cs-item {
-    grid-column: span 4;
+    padding: 0 clamp(1.5rem, 3vw, 2.25rem);
+    border-right: 1px solid rgba(255, 255, 255, 0.16);
+  }
+  #hero-1618 .cs-item:first-child {
+    padding-left: 0;
+  }
+  #hero-1618 .cs-item:last-child {
+    padding-right: 0;
+    border-right: 0;
   }
   #hero-1618 .cs-background {
-    height: 87%;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    overflow: hidden;
   }
   #hero-1618 .cs-background:before {
-    background: linear-gradient(90deg, #1a1a1a 25%, #1a1a1ade 40%, #1a1a1a49 62.53%);
-    opacity: 1;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(20, 28, 43, 0.6) 0%, rgba(20, 28, 43, 0.3) 30%, rgba(20, 28, 43, 0.3) 70%, rgba(20, 28, 43, 0.6) 100%), linear-gradient(180deg, rgba(20, 28, 43, 0.3) 0%, rgba(20, 28, 43, 0.05) 38%, var(--secondaryLight) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: none;
   }
-}
-/* Large Desktop Parallax Effect - 100px */
-@media only screen and (min-width: 100rem) {
-  #hero-1618 .cs-background {
-    background: url("https://hclexteriors.netlify.app/assets/images/hero-3.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    /* creates the parallax effect */
-    background-attachment: fixed;
+  #hero-1618 .cs-background:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(20, 24, 31, 0.18) 0%, rgba(20, 24, 31, 0.1) 38%, rgba(20, 24, 31, 0.2) 64%, var(--secondaryLight) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: none;
   }
   #hero-1618 .cs-background img {
-    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 54% center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: saturate(0.95) contrast(1.16) brightness(0.8);
+  }
+  #hero-1618 .cs-background img {
+    object-position: center;
+  }
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #hero-1618 {
+    padding-top: clamp(9rem, 11vw, 12rem);
+  }
+  #hero-1618 .cs-content {
+    padding-bottom: 0;
+  }
+  #hero-1618 .cs-title {
+    max-width: 61.25rem;
+  }
+  #hero-1618 .cs-text {
+    max-width: 53.75rem;
+  }
+  #hero-1618 .cs-card-group {
+    margin-top: 0;
+    margin-bottom: clamp(-5.5rem, -6vw, -4rem);
+  }
+}
+/* Large Desktop - 1600px */
+@media only screen and (min-width: 100rem) {
+  #hero-1618 .cs-background {
+    background: none;
+  }
+  #hero-1618 .cs-background:before {
+    background: linear-gradient(90deg, rgba(20, 28, 43, 0.3) 0%, rgba(20, 28, 43, 0.15) 30%, rgba(20, 28, 43, 0.15) 70%, rgba(20, 28, 43, 0.3) 100%), linear-gradient(180deg, rgba(20, 28, 43, 0.1) 0%, rgba(20, 28, 43, 0.2) 60%, var(--secondaryLight) 100%);
+  }
+  #hero-1618 .cs-background:after {
+    background: linear-gradient(180deg, rgba(20, 24, 31, 0) 0%, rgba(20, 24, 31, 0.1) 38%, rgba(20, 24, 31, 0.2) 64%, var(--secondaryLight) 100%);
+  }
+  #hero-1618 .cs-background img {
+    display: block;
+    object-position: center;
+    filter: saturate(0.9) contrast(1.12) brightness(0.98);
   }
 }

@@ -4,20 +4,130 @@
 
 <section id="cta-52">
     <div class="cs-container">
-        <div class="cs-content">
-            <span class="cs-topper">Fast & Free Estimates</span>
-            <h2 class="cs-title">Get Your Free Quote Today</h2>
-            <p class="cs-text">
-                Share a few details about your home and your project, and we’ll get back to you with a free, no-obligation quote.
-            </p>
-            <a href="/contact" class="cs-button-solid">Get a Free Quote</a>
-        </div>
-        <!-- Background Image-->
-        <picture class="cs-picture">
-            <source media="(max-width: 600px)" srcset="/assets/images/cta-3.jpg">
-            <source media="(min-width: 601px)" srcset="/assets/images/cta-3.jpg">
-            <img loading="lazy" decoding="async" src="/assets/images/cta-3.jpg" alt="grass" width="1920" height="1280" aria-hidden="true">
+        <picture class="cs-background">
+            <source media="(max-width: 600px)" srcset="/assets/images/hero-4.jpg">
+            <source media="(min-width: 601px)" srcset="/assets/images/hero-4.jpg">
+            <img
+                loading="lazy"
+                decoding="async"
+                src="/assets/images/hero-4.jpg"
+                alt="roof inspection view from above"
+                width="1600"
+                height="1067"
+                aria-hidden="true"
+            >
         </picture>
+
+        <div class="cs-content">
+            <span class="cs-topper">Your Home. Protected.</span>
+
+            <h2 class="cs-title">Ready to Start Your Exterior Project?</h2>
+
+            <p class="cs-text">
+                From roofing to siding and everything in between, our team is ready to deliver expert craftsmanship and lasting protection.
+                Schedule your free inspection today. No pressure, just honest answers and a plan that fits your needs.
+            </p>
+
+            <ul class="cs-feature-group">
+                <li class="cs-feature">
+                    <span class="cs-feature-icon" aria-hidden="true">
+                        <img class="cs-feature-img" src="/assets/svgs/flash.svg" alt="" width="24" height="24" loading="lazy" decoding="async">
+                    </span>
+                    <div class="cs-feature-content">
+                        <strong>Fast Response</strong>
+                        <span>We typically respond within 1 business day.</span>
+                    </div>
+                </li>
+
+                <li class="cs-feature">
+                    <span class="cs-feature-icon" aria-hidden="true">
+                        <img class="cs-feature-img" src="/assets/svgs/shield-4.svg" alt="" width="24" height="24" loading="lazy" decoding="async">
+                    </span>
+                    <div class="cs-feature-content">
+                        <strong>No-Obligation Estimate</strong>
+                        <span>Honest, transparent pricing — always.</span>
+                    </div>
+                </li>
+
+                <li class="cs-feature">
+                    <span class="cs-feature-icon" aria-hidden="true">
+                        <img class="cs-feature-img" src="/assets/svgs/pin-3.svg" alt="" width="24" height="24" loading="lazy" decoding="async">
+                    </span>
+                    <div class="cs-feature-content">
+                        <strong>Locally Trusted</strong>
+                        <span>Proudly serving Duluth and surrounding areas.</span>
+                    </div>
+                </li>
+
+                <li class="cs-feature">
+                    <span class="cs-feature-icon" aria-hidden="true">
+                        <img class="cs-feature-img" src="/assets/svgs/calendar-1.svg" alt="" width="24" height="24" loading="lazy" decoding="async">
+                    </span>
+                    <div class="cs-feature-content">
+                        <strong>Flexible Scheduling</strong>
+                        <span>Appointments that work around you.</span>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="cs-trust">
+                <strong>Fully Licensed <span>•</span> Insured <span>•</span> Locally Owned</strong>
+                <p>Quality work. Trusted by homeowners.</p>
+            </div>
+        </div>
+
+        <form class="cs-form" name="Free Inspection Form" method="post" action="/contact/">
+            <div class="cs-form-heading">
+                <div>
+                    <h3 class="cs-form-title">Request Your Free Inspection</h3>
+                    <p class="cs-form-text">Fill out the form and we’ll be in touch promptly.</p>
+                </div>
+            </div>
+
+            <label class="cs-label">
+                Full Name
+                <input class="cs-input" type="text" name="name" placeholder="Your full name" required>
+            </label>
+
+            <label class="cs-label">
+                Phone Number
+                <input class="cs-input" type="tel" name="phone" placeholder="(218) 555-1234" required>
+            </label>
+
+            <label class="cs-label cs-full">
+                Email Address
+                <input class="cs-input" type="email" name="email" placeholder="you@example.com" required>
+            </label>
+
+            <label class="cs-label cs-full">
+                How Did You Hear About Us?
+                <select class="cs-input cs-select" name="referral" required>
+                    <option value="">Select an option</option>
+                    <option value="Google Search">Google Search</option>
+                    <option value="Google Maps">Google Maps</option>
+                    <option value="Referral">Referral</option>
+                    <option value="Facebook">Facebook</option>
+                    <option value="Yard Sign">Yard Sign</option>
+                    <option value="Previous Customer">Previous Customer</option>
+                    <option value="Other">Other</option>
+                </select>
+            </label>
+
+            <label class="cs-label cs-full">
+                Project Details
+                <textarea class="cs-input cs-textarea" name="message" placeholder="Tell us about your project, concerns, or goals..."></textarea>
+            </label>
+
+            <button class="cs-button-solid" type="submit">
+                Request Inspection
+            </button>
+
+            <p class="cs-form-note">
+                <span class="cs-note-check" aria-hidden="true">
+                    <img class="cs-check-img" src="/assets/svgs/check-1.svg" alt="" width="10" height="10" loading="lazy" decoding="async">
+                </span>
+                We typically respond within 1 business day.
+            </p>
+        </form>
     </div>
 </section>
-                                

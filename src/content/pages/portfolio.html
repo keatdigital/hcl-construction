@@ -1,7 +1,7 @@
 ---
 title: 'Duluth Roofing & Siding Projects | HCL Construction'
-description: 'Meta description for the page'
-preloadImg: '/assets/images/banner.jpg'
+description: 'View roofing, siding, and exterior projects from HCL Construction in Duluth, MN. See examples of our work and how we help local homeowners.'
+preloadImg: '/assets/images/hcl-hero-2.jpg'
 permalink: 'our-work/'
 eleventyNavigation:
     key: Our Work
@@ -12,93 +12,158 @@ eleventyNavigation:
 
 {% block head %}
     <link rel="stylesheet" href="/assets/css/portfolio.css">
+    <script src="/assets/js/gallery.js" defer></script>
 {% endblock %}
 
 {% block body %}
 
-    <!-- ============================================ -->
-    <!--                    LANDING                   -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
 
-    <section id="int-hero">
-        <h1 id="home-h">Duluth Area Roofing & Siding Projects</h1>
-        <picture>
-            <source media="(max-width: 600px)" srcset="/assets/images/banner.jpg">
-            <source media="(min-width: 601px)" srcset="/assets/images/banner.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/banner.jpg" alt="grass" loading="eager" width="2500" height="1667">
-        </picture>
-    </section>
+<section id="int-hero">
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" srcset="/assets/images/hcl-hero-2.jpg">
+        <source media="(min-width: 601px)" srcset="/assets/images/hcl-hero-2.jpg">
+        <img
+            aria-hidden="true"
+            decoding="async"
+            src="/assets/images/hcl-hero-2.jpg"
+            alt="completed roofing project on a home in Northern Minnesota"
+            loading="eager"
+            width="2500"
+            height="1667"
+        >
+    </picture>
 
-    <!-- ============================================ -->
-    <!--                   Gallery                    -->
-    <!-- ============================================ -->
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Our Work</span>
 
-    <section id="gallery-1086">
-        <div class="cs-container">
-            <div class="cs-content">
-                <h2 class="cs-title">Work We've Done for Homes Across Northern Minnesota</h2>
-            </div>
-            <div class="cs-image-group">
-                <picture class="cs-picture cs-picture1">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="/assets/images/small/roof-1.jpg">
-                    <!--Tablet and above Image-->
-                    <source media="(min-width: 601px)" srcset="/assets/images/small/roof-1.jpg">
-                    <img loading="lazy" decoding="async" src="/assets/images/small/roof-1.jpg" alt="mechaninc" width="345" height="345">
-                </picture>
-                <picture class="cs-picture cs-picture2">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="/assets/images/small/roof-2.jpg">
-                    <!--Tablet and above Image-->
-                    <source media="(min-width: 601px)" srcset="/assets/images/small/roof-2.jpg">
-                    <img loading="lazy" decoding="async" src="/assets/images/small/roof-2.jpg" alt="mechaninc" width="345" height="345">
-                </picture>
-                <picture class="cs-picture cs-picture3">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="/assets/images/small/roof-3.jpg">
-                    <!--Tablet and above Image-->
-                    <source media="(min-width: 601px)" srcset="/assets/images/small/roof-3.jpg">
-                    <img loading="lazy" decoding="async" src="/assets/images/small/roof-3.jpg" alt="mechaninc" width="345" height="345">
-                </picture>
-                <picture class="cs-picture cs-picture4">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="/assets/images/small/roof-4.jpg">
-                    <!--Tablet and above Image-->
-                    <source media="(min-width: 601px)" srcset="/assets/images/small/roof-4.jpg">
-                    <img loading="lazy" decoding="async" src="/assets/images/small/roof-4.jpg" alt="mechaninc" width="345" height="345">
-                </picture>
-                <picture class="cs-picture cs-picture5">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="/assets/images/small/roof-8.jpg">
-                    <!--Tablet and above Image-->
-                    <source media="(min-width: 601px)" srcset="/assets/images/small/roof-8.jpg">
-                    <img loading="lazy" decoding="async" src="/assets/images/small/roof-8.jpg" alt="mechaninc" width="345" height="345">
-                </picture>
-                <picture class="cs-picture cs-picture6">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="/assets/images/small/roof-5.jpg">
-                    <!--Tablet and above Image-->
-                    <source media="(min-width: 601px)" srcset="/assets/images/small/roof-5.jpg">
-                    <img loading="lazy" decoding="async" src="/assets/images/small/roof-5.jpg" alt="mechaninc" width="345" height="345">
-                </picture>
-                <picture class="cs-picture cs-picture7">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="/assets/images/small/roof-6.jpg">
-                    <!--Tablet and above Image-->
-                    <source media="(min-width: 601px)" srcset="/assets/images/small/roof-6.jpg">
-                    <img loading="lazy" decoding="async" src="/assets/images/small/roof-6.jpg" alt="mechaninc" width="345" height="345">
-                </picture>
-                <picture class="cs-picture cs-picture8">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="/assets/images/small/roof-7.jpg">
-                    <!--Tablet and above Image-->
-                    <source media="(min-width: 601px)" srcset="/assets/images/small/roof-7.jpg">
-                    <img loading="lazy" decoding="async" src="/assets/images/small/roof-7.jpg" alt="mechaninc" width="345" height="345">
-                </picture>
+            <h1 class="cs-title">Exterior Projects Built to Last</h1>
+
+            <p class="cs-text">
+                From full roof replacements to siding makeovers, we deliver high-quality exterior work that protects your home and elevates its curb appeal.
+            </p>
+
+            <div class="cs-button-group">
+                <a href="/#cta-1235" class="cs-button-solid">
+                   Get a Free Inspection
+                </a>
+
+                <a href="/contact/" class="cs-button-transparent">
+                    Contact Us
+                </a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    {% include 'components/cta.html' %}
+<!-- ============================================ -->
+<!--                   Gallery                    -->
+<!-- ============================================ -->
+
+<section id="gallery-1086" data-gallery-filter>
+    <div class="cs-container">
+        <div class="cs-heading-row">
+            <div class="cs-content">
+                <span class="cs-topper">Project Gallery</span>
+                <h2 class="cs-title">Recent Exterior Work</h2>
+            </div>
+
+            <div class="cs-filter-group" aria-label="Filter project gallery">
+                <button class="cs-filter-button cs-active" type="button" data-filter="all">
+                    All Projects
+                </button>
+                <button class="cs-filter-button" type="button" data-filter="roofing">
+                    Roofing
+                </button>
+                <button class="cs-filter-button" type="button" data-filter="siding">
+                    Siding
+                </button>
+                <button class="cs-filter-button" type="button" data-filter="residential">
+                    Residential
+                </button>
+                <button class="cs-filter-button" type="button" data-filter="commercial">
+                    Commercial
+                </button>
+            </div>
+        </div>
+
+        <div class="cs-image-group">
+            <picture class="cs-picture" data-category="all roofing residential">
+                <source media="(max-width: 600px)" srcset="/assets/images/small/roof-1.jpg">
+                <source media="(min-width: 601px)" srcset="/assets/images/small/roof-1.jpg">
+                <img loading="lazy" decoding="async" src="/assets/images/small/roof-1.jpg" alt="completed asphalt shingle roof project" width="345" height="345">
+            </picture>
+
+            <picture class="cs-picture" data-category="all roofing residential">
+                <source media="(max-width: 600px)" srcset="/assets/images/small/roof-2.jpg">
+                <source media="(min-width: 601px)" srcset="/assets/images/small/roof-2.jpg">
+                <img loading="lazy" decoding="async" src="/assets/images/small/roof-2.jpg" alt="residential roof replacement from above" width="345" height="345">
+            </picture>
+
+            <picture class="cs-picture" data-category="all roofing residential">
+                <source media="(max-width: 600px)" srcset="/assets/images/small/roof-3.jpg">
+                <source media="(min-width: 601px)" srcset="/assets/images/small/roof-3.jpg">
+                <img loading="lazy" decoding="async" src="/assets/images/small/roof-3.jpg" alt="gray shingle roofing project near a residential street" width="345" height="345">
+            </picture>
+
+            <picture class="cs-picture" data-category="all roofing residential">
+                <source media="(max-width: 600px)" srcset="/assets/images/small/roof-4.jpg">
+                <source media="(min-width: 601px)" srcset="/assets/images/small/roof-4.jpg">
+                <img loading="lazy" decoding="async" src="/assets/images/small/roof-4.jpg" alt="finished ridge line on a shingle roof" width="345" height="345">
+            </picture>
+
+            <picture class="cs-picture" data-category="all roofing residential">
+                <source media="(max-width: 600px)" srcset="/assets/images/small/work-6.jpg">
+                <source media="(min-width: 601px)" srcset="/assets/images/small/work-6.jpg">
+                <img loading="lazy" decoding="async" src="/assets/images/small/work-6.jpg" alt="completed exterior roofing project surrounded by trees" width="690" height="345">
+            </picture>
+
+            <picture class="cs-picture" data-category="all roofing residential">
+                <source media="(max-width: 600px)" srcset="/assets/images/small/roof-8.jpg">
+                <source media="(min-width: 601px)" srcset="/assets/images/small/roof-8.jpg">
+                <img loading="lazy" decoding="async" src="/assets/images/small/roof-8.jpg" alt="completed roof surrounded by trees" width="345" height="345">
+            </picture>
+
+            <picture class="cs-picture" data-category="all roofing residential">
+                <source media="(max-width: 600px)" srcset="/assets/images/small/roof-5.jpg">
+                <source media="(min-width: 601px)" srcset="/assets/images/small/roof-5.jpg">
+                <img loading="lazy" decoding="async" src="/assets/images/small/roof-5.jpg" alt="roof replacement project on a home in a wooded area" width="345" height="345">
+            </picture>
+
+             <picture class="cs-picture" data-category="all roofing residential">
+                <source media="(max-width: 600px)" srcset="/assets/images/small/roof-6.jpg">
+                <source media="(min-width: 601px)" srcset="/assets/images/small/roof-6.jpg">
+                <img loading="lazy" decoding="async" src="/assets/images/small/roof-6.jpg" alt="green metal roof installation project" width="345" height="345">
+            </picture>
+
+             <picture class="cs-picture" data-category="all roofing residential">
+                <source media="(max-width: 600px)" srcset="/assets/images/small/roof-7.jpg">
+                <source media="(min-width: 601px)" srcset="/assets/images/small/roof-7.jpg">
+                <img loading="lazy" decoding="async" src="/assets/images/small/roof-7.jpg" alt="finished metal roofing project surrounded by trees" width="690" height="345">
+            </picture>
+
+        </div>
+    </div>
+</section>
+
+{% include "components/inter-cta.html" %}
+
+<!-- ============================================ -->
+<!--                Gallery Modal                 -->
+<!-- ============================================ -->
+
+<div class="cs-gallery-modal" data-gallery-modal aria-hidden="true">
+    <div class="cs-modal-dialog" role="dialog" aria-modal="true" aria-label="Expanded project image">
+        <button class="cs-modal-close" type="button" data-gallery-modal-close aria-label="Close image preview">
+            ×
+        </button>
+
+        <img class="cs-modal-img" src="" alt="">
+    </div>
+</div>
+
 
 {% endblock %}

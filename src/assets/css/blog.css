@@ -4,7 +4,7 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   body {
-    background-color: var(--secondary);
+    background-color: var(--secondaryLight);
   }
   .blog-container {
     margin: auto;
@@ -13,7 +13,7 @@
   }
   .blog-link {
     font-size: 1rem;
-    font-weight: 700;
+    font-weight: 600;
     /* 46px - 56px */
     line-height: clamp(2.875em, 5.5vw, 3.5em);
     text-align: center;
@@ -64,7 +64,7 @@
     width: 100%;
     font-size: clamp(24px, 4vw, 48px);
     line-height: 1.2em;
-    font-weight: 700;
+    font-weight: 600;
     color: #fff;
     text-align: left;
   }
@@ -141,8 +141,18 @@
     width: 100%;
     overflow: hidden;
     flex: none;
-    background-color: var(--secondaryLight);
-    box-shadow: 2px 2px 10px #0000002e;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 0.625rem;
+    background: linear-gradient(145deg, rgba(20, 28, 43, 0.9), rgba(13, 19, 31, 0.92));
+    box-shadow: 0 2rem 5rem rgba(5, 8, 12, 0.38);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  }
+  .recent-articles:hover {
+    transform: translateY(-0.25rem);
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.34);
   }
   .recent-articles .blog-mainImage {
     position: relative;
@@ -160,7 +170,7 @@
     object-fit: cover;
   }
   .recent-articles .article-group {
-    border-radius: 0 0 0.5em 0.5em;
+    border-radius: 0 0 0.625rem 0.625rem;
     padding: clamp(30px, 5vw, 50px);
   }
   .recent-articles .blog-author-img {
@@ -202,7 +212,7 @@
     margin: 1rem 0;
     font-size: clamp(20px, 5vw, 32px);
     line-height: 1.4em;
-    font-weight: 700;
+    font-weight: 600;
     color: var(--headerColor);
   }
   .recent-articles .blog-desc {
@@ -240,8 +250,14 @@
     align-items: center;
     width: 100%;
     padding: 2.1875em 1.875em;
-    background-color: var(--secondaryLight);
-    box-shadow: 2px 2px 10px #0000001e;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-left: 3px solid rgba(0, 255, 24, 0.55);
+    border-radius: 0.625rem;
+    background: linear-gradient(145deg, rgba(20, 28, 43, 0.9), rgba(13, 19, 31, 0.92));
+    box-shadow: 0 2rem 5rem rgba(5, 8, 12, 0.34);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    box-sizing: border-box;
   }
   .blog-sidebar .blog-header {
     position: relative;
@@ -265,7 +281,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    border-bottom: 1px solid #ebebeb;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
     width: 100%;
     padding: 1.25rem 0;
     text-decoration: none;
@@ -281,11 +297,14 @@
   .blog-sidebar .blog-featureImage {
     position: relative;
     display: block;
+    border: 1px solid rgba(255, 255, 255, 0.14);
     border-radius: 50%;
+    background: rgba(255, 255, 255, 0.06);
     height: 3.75em;
     width: 3.75em;
     overflow: hidden;
     flex: none;
+    box-sizing: border-box;
   }
   .blog-sidebar .blog-featureImage img {
     position: absolute;
@@ -302,7 +321,7 @@
     text-decoration: none;
     font-size: 0.9375rem;
     line-height: 1.5em;
-    font-weight: 700;
+    font-weight: 600;
     color: var(--headerColor);
   }
   .blog-sidebar .feature-date {
@@ -333,6 +352,7 @@
     display: block;
     margin-bottom: 3.125em;
     height: clamp(200px, 30vw, 400px);
+    border-radius: 0.625rem;
     width: 100%;
     overflow: hidden;
   }
@@ -384,7 +404,7 @@
     max-width: 34.375rem;
     font-size: clamp(20px, 5vw, 39px);
     line-height: 1.4em;
-    font-weight: 700;
+    font-weight: 600;
     color: var(--headerColor);
   }
   .blog-article #blog-content {
@@ -396,21 +416,21 @@
     margin-bottom: 1rem;
     font-size: 2.25rem;
     line-height: 1.75em;
-    font-weight: 700;
+    font-weight: 600;
     color: var(--headerColor);
   }
   .blog-article #blog-content h2 {
     margin-bottom: 1rem;
     font-size: 1.75rem;
     line-height: 1.5em;
-    font-weight: 700;
+    font-weight: 600;
     color: var(--headerColor);
   }
   .blog-article #blog-content h3 {
     margin-bottom: 1rem;
     font-size: 1.5rem;
     line-height: 1.5em;
-    font-weight: 700;
+    font-weight: 600;
     color: var(--headerColor);
   }
   .blog-article #blog-content h4,
@@ -419,7 +439,7 @@
     margin-bottom: 1rem;
     font-size: 1.25rem;
     line-height: 1.5em;
-    font-weight: 700;
+    font-weight: 600;
     color: var(--headerColor);
   }
   .blog-article #blog-content p {
@@ -514,7 +534,7 @@
     margin-bottom: 1.25rem;
     font-size: 1rem;
     line-height: 1.5em;
-    font-weight: 700;
+    font-weight: 600;
     color: var(--bodyTextColorWhite);
   }
   #cs-footer .cs-nav-link {

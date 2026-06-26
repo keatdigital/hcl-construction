@@ -1,7 +1,7 @@
 ---
-title: 'Blog | HCL Construction'
-description: 'Meta description for the page'
-preloadImg: '/assets/images/banner.jpg'
+title: 'Roofing & Siding Tips Duluth, MN | HCL Construction'
+description: 'Explore roofing, siding, storm damage, and exterior maintenance tips from HCL Construction for homeowners in Duluth, MN and the surrounding area.'
+preloadImg: '/assets/images/hcl-hero-2.jpg'
 permalink: 'blog/'
 eleventyNavigation:
     key: Blog
@@ -15,18 +15,47 @@ eleventyNavigation:
 {% endblock %}
 
 {% block body %}
-    <!-- ============================================ -->
-    <!--                    LANDING                   -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
 
-    <section id="int-hero">
-        <h1 id="home-h">Blog</h1>
-        <picture>
-            <source media="(max-width: 600px)" srcset="/assets/images/banner.jpg">
-            <source media="(min-width: 601px)" srcset="/assets/images/banner.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/banner.jpg" alt="grass" loading="eager" width="2500" height="1667">
-        </picture>
-    </section>
+<section id="int-hero">
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" srcset="/assets/images/hcl-hero-2.jpg">
+        <source media="(min-width: 601px)" srcset="/assets/images/hcl-hero-2.jpg">
+        <img
+            aria-hidden="true"
+            decoding="async"
+            src="/assets/images/hcl-hero-2.jpg"
+            alt="completed roofing project on a home in Northern Minnesota"
+            loading="eager"
+            width="2500"
+            height="1667"
+        >
+    </picture>
+
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Homeowner Resources</span>
+
+            <h1 class="cs-title">Helpful Exterior Tips for Homes Around Duluth</h1>
+
+            <p class="cs-text">
+                See what our customers have to say about our roofing, siding, and exterior work. We're proud to earn trust through quality work, honest communication, and lasting results. 
+            </p>
+
+            <div class="cs-button-group">
+                <a href="/#cta-1235" class="cs-button-solid">
+                   Get a Free Inspection
+                </a>
+
+                <a href="/contact/" class="cs-button-transparent">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
 
     <!-- ============================================ -->
     <!--              Main Blog Content               -->
@@ -76,7 +105,7 @@ eleventyNavigation:
                             <p class="blog-desc">
                                 {{ post.data.description }}
                             </p>
-                            <a href="{{ post.url }}" class="blog-link">Continue Reading</a>
+                            <a href="{{ post.url }}" class="cs-button-solid">Continue Reading</a>
                         </div>
                     </article>
                 {%- endfor -%}
