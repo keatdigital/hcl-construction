@@ -244,7 +244,23 @@ eleventyNavigation:
             </ul>
         </div>
 
-        <form class="cs-form" name="Free Inspection Form" method="post" action="/contact/">
+        <form 
+            class="cs-form" 
+            name="Free Inspection Form" 
+            method="post" 
+            action="/contact/"
+            data-netlify="true"
+            netlify-honeypot="bot-field"
+        >
+            <input type="hidden" name="form-name" value="Free Inspection Form">
+
+            <p class="hidden" aria-hidden="true">
+                <label>
+                    Don’t fill this out if you’re human:
+                    <input name="bot-field" type="text" tabindex="-1" autocomplete="off">
+                </label>
+            </p>
+
             <div class="cs-form-heading">
                 <div>
                     <h3 class="cs-form-title">Request Your Free Inspection</h3>
