@@ -1420,7 +1420,6 @@
                 }
 
                 .cs-link {
-
                     .cs-link-arrow {
                         transform: translateX((4/16rem));
                     }
@@ -1479,7 +1478,7 @@
             font-size: clamp(1.5rem, 2.6vw, 2rem);
             line-height: 1.1em;
             font-weight: 600;
-            letter-spacing: -.035em;
+            letter-spacing: -.03em;
             color: #fff;
             margin: 0 0 (14/16rem);
         }
@@ -1518,7 +1517,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: (18/16rem);
+            gap: (10/16rem);
         }
 
         .cs-slider-button {
@@ -1538,6 +1537,11 @@
                 border-color: rgba(0, 255, 24, .55);
                 background: rgba(0, 255, 24, .08);
                 color: var(--primary);
+            }
+
+            &:focus-visible {
+                outline: 2px solid var(--primary);
+                outline-offset: 4px;
             }
 
             &:disabled {
@@ -1562,28 +1566,50 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: (12/16rem);
+            gap: (2/16rem);
         }
 
         .cs-dot {
-            width: (10/16rem);
-            height: (10/16rem);
+            width: (44/16rem);
+            height: (44/16rem);
             padding: 0;
             border: 0;
             border-radius: 50%;
-            background: rgba(255, 255, 255, .32);
+            background: transparent;
             cursor: pointer;
-            transition: width .3s, background-color .3s, opacity .3s;
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            &:before {
+                content: "";
+                width: (10/16rem);
+                height: (10/16rem);
+                border-radius: 50%;
+                background: rgba(255, 255, 255, .32);
+                display: block;
+                transition: width .3s, background-color .3s, box-shadow .3s;
+            }
 
             &:hover {
-                background: rgba(255, 255, 255, .55);
+                &:before {
+                    background: rgba(255, 255, 255, .55);
+                }
+            }
+
+            &:focus-visible {
+                outline: 2px solid var(--primary);
+                outline-offset: 2px;
             }
 
             &.cs-active {
-                width: (28/16rem);
-                border-radius: (99/16rem);
-                background: var(--primary);
-                box-shadow: 0 0 1rem rgba(0, 255, 24, .28);
+                &:before {
+                    width: (28/16rem);
+                    border-radius: (99/16rem);
+                    background: var(--primary);
+                    box-shadow: 0 0 1rem rgba(0, 255, 24, .28);
+                }
             }
         }
     }
@@ -1618,7 +1644,7 @@
             max-width: (1440/16rem);
         }
     }
-}                             
+}                          
 
 /*-- -------------------------- -->
 <---            Map             -->
