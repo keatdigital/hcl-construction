@@ -24,11 +24,11 @@
         <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg" />
         <link rel="shortcut icon" href="/assets/favicons/favicon.ico" />
         <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png" />
-        <meta name="apple-mobile-web-app-title" content="Landscaping" />
+        <meta name="apple-mobile-web-app-title" content="HCL Construction" />
         <link rel="manifest" href="/assets/favicons/site.webmanifest" />
 
         <!-- Preloads -->
-        <link rel="preload" as="image" href="/assets/svgs/new-logo.svg">
+        <link rel="preload" as="image" href="/assets/images/logo.png">
         <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-regular.woff2" crossorigin>
         <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-700.woff2" crossorigin>
 
@@ -43,6 +43,16 @@
         <script defer src="/assets/js/scrolled.js"></script>
         <script defer src="/assets/js/faq.js"></script>
         <script defer src="/assets/js/projects-carousel.js"></script>
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-MS9R58V0V9"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-MS9R58V0V9');
+        </script>
 
         {% block head %}{% endblock %}
 
