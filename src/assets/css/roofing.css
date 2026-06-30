@@ -1238,7 +1238,7 @@
     font-size: clamp(1.5rem, 2.6vw, 2rem);
     line-height: 1.1em;
     font-weight: 600;
-    letter-spacing: -0.035em;
+    letter-spacing: -0.03em;
     color: #fff;
     margin: 0 0 0.875rem;
   }
@@ -1273,7 +1273,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1.125rem;
+    gap: 0.625rem;
   }
   #projects-1286 .cs-slider-button {
     width: 2.75rem;
@@ -1293,6 +1293,10 @@
     background: rgba(0, 255, 24, 0.08);
     color: var(--primary);
   }
+  #projects-1286 .cs-slider-button:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 4px;
+  }
   #projects-1286 .cs-slider-button:disabled {
     opacity: 0.35;
     cursor: not-allowed;
@@ -1311,22 +1315,38 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.75rem;
+    gap: 0.125rem;
   }
   #projects-1286 .cs-dot {
-    width: 0.625rem;
-    height: 0.625rem;
+    width: 2.75rem;
+    height: 2.75rem;
     padding: 0;
     border: 0;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.32);
+    background: transparent;
     cursor: pointer;
-    transition: width 0.3s, background-color 0.3s, opacity 0.3s;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
   }
-  #projects-1286 .cs-dot:hover {
+  #projects-1286 .cs-dot:before {
+    content: "";
+    width: 0.625rem;
+    height: 0.625rem;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.32);
+    display: block;
+    transition: width 0.3s, background-color 0.3s, box-shadow 0.3s;
+  }
+  #projects-1286 .cs-dot:hover:before {
     background: rgba(255, 255, 255, 0.55);
   }
-  #projects-1286 .cs-dot.cs-active {
+  #projects-1286 .cs-dot:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+  }
+  #projects-1286 .cs-dot.cs-active:before {
     width: 1.75rem;
     border-radius: 6.1875rem;
     background: var(--primary);
