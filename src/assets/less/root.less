@@ -1252,7 +1252,7 @@
             border-left: 2px solid rgba(0, 255, 24, .5);
             border-radius: (10/16rem);
             background: linear-gradient(145deg, rgba(20, 28, 43, .74), rgba(13, 19, 31, .78));
-            box-shadow: 0 2rem 5rem rgba(5, 8, 12, .32);
+            // box-shadow: 0 2rem 5rem rgba(5, 8, 12, .32);
             box-sizing: border-box;
             overflow: hidden;
             display: grid;
@@ -1476,10 +1476,10 @@
             margin: auto;
             padding: clamp(1.5rem, 4vw, 4rem);
             border: 1px solid rgba(255, 255, 255, .18);
-            border-left: 3px solid rgba(0, 255, 24, .7);
+            // border-left: 3px solid rgba(0, 255, 24, .7);
             border-radius: (10/16rem);
             background: linear-gradient(145deg, rgba(20, 28, 43, .58), rgba(13, 19, 31, .62));
-            box-shadow: 0 2rem 5rem rgba(5, 8, 12, .38);
+            // box-shadow: 0 2rem 5rem rgba(5, 8, 12, .38);
             backdrop-filter: blur(6px);
             -webkit-backdrop-filter: blur(6px);
             box-sizing: border-box;
@@ -1500,33 +1500,12 @@
             z-index: 0;
             overflow: hidden;
 
-            &:before {
-                content: "";
-                width: 100%;
-                height: 100%;
-                background: linear-gradient(
-                    180deg,
-                    rgba(10, 14, 24, .98) 0%,
-                    rgba(13, 19, 31, .96) 34%,
-                    rgba(13, 19, 31, .84) 58%,
-                    rgba(13, 19, 31, .48) 82%,
-                    rgba(13, 19, 31, .08) 100%
-                );
-                position: absolute;
-                inset: 0;
-                z-index: 1;
-                pointer-events: none;
-            }
-
             &:after {
                 content: "";
                 width: 100%;
                 height: 100%;
-                background: linear-gradient(
-                    180deg,
-                    rgba(20, 24, 31, .18) 0%,
-                    rgba(9, 15, 20, 0) 100%
-                );
+                background: #000;
+                opacity: .3;
                 position: absolute;
                 inset: 0;
                 z-index: 2;
@@ -1558,6 +1537,11 @@
             flex-direction: column;
             align-items: center;
         }
+        
+        .cs-topper, .cs-title,
+        .cs-text {
+            text-shadow: 0 .125rem .75rem rgba(0, 0, 0, .4);
+        }
 
         .cs-text {
             font-size: clamp(1.0625rem, 1.8vw, 1.375rem);
@@ -1566,6 +1550,7 @@
             max-width: (620/16rem);
             margin: 0 auto clamp(2rem, 4vw, 2.5rem);
             color: rgba(255, 255, 255, .82);
+            text-shadow: 0 .125rem .75rem rgba(0, 0, 0, .6);
 
             strong {
                 color: var(--primary);
@@ -1588,7 +1573,7 @@
             border: 1px solid rgba(255, 255, 255, .12);
             border-radius: (10/16rem);
             background: linear-gradient(145deg, rgba(20, 28, 43, .72), rgba(13, 19, 31, .68));
-            box-shadow: 0 1.5rem 3.5rem rgba(5, 8, 12, .28);
+            // box-shadow: 0 1.5rem 3.5rem rgba(5, 8, 12, .28);
             backdrop-filter: blur(8px);
             -webkit-backdrop-filter: blur(8px);
             list-style: none;
@@ -1691,7 +1676,7 @@
                 rgba(20, 28, 43, .68),
                 rgba(13, 19, 31, .56)
             );
-            box-shadow: 0 2rem 5rem rgba(5, 8, 12, .34);
+            // box-shadow: 0 2rem 5rem rgba(5, 8, 12, .34);
             backdrop-filter: blur(14px);
             -webkit-backdrop-filter: blur(14px);
             box-sizing: border-box;
@@ -1759,7 +1744,7 @@
             &:focus {
                 border-color: rgba(0, 255, 24, .72);
                 background: rgba(255, 255, 255, .075);
-                box-shadow: 0 0 0 3px rgba(0, 255, 24, .08);
+                // box-shadow: 0 0 0 3px rgba(0, 255, 24, .08);
             }
         }
 
@@ -1872,24 +1857,6 @@
         }
 
         .cs-background {
-            &:before {
-                background: linear-gradient(
-                    90deg,
-                    rgba(13, 19, 31, .98) 0%,
-                    rgba(13, 19, 31, .94) 28%,
-                    rgba(13, 19, 31, .8) 45%,
-                    rgba(13, 19, 31, .5) 64%,
-                    rgba(13, 19, 31, .18) 100%
-                );
-            }
-
-            &:after {
-                background: linear-gradient(
-                    180deg,
-                    rgba(13, 19, 31, .12) 0%,
-                    rgba(13, 19, 31, .8) 100%
-                );
-            }
 
             img {
                 object-position: 65% center;
