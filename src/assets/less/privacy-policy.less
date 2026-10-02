@@ -1,0 +1,153 @@
+
+/*-- -------------------------- -->
+<---   Interior Page Header     -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #int-hero {
+
+        .cs-title {
+            max-width: 40rem;
+        }
+
+        .cs-text {
+            max-width: 26rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 48rem) {
+    #int-hero {
+
+        .cs-title {
+            max-width: 40rem;
+        }
+
+        .cs-text {
+            max-width: 36rem;
+        }
+    }
+}
+
+/*-- -------------------------- -->
+<---     Legal Document Page     -->
+<--- -------------------------- -*/
+
+/* Mobile - 0px+ */
+@media only screen and (min-width: 0rem) {
+    .legal-document {
+        padding: var(--sectionPadding);
+        background: var(--secondaryLight);
+        color: #fff;
+
+        &__container {
+            width: 100%;
+            max-width: (816/16rem);
+            margin: 0 auto;
+        }
+
+        h1,
+        h2,
+        h3,
+        p,
+        ul {
+            margin-top: 0;
+            color: #fff;
+        }
+
+        h1{
+            font-size: clamp(3rem, 2.5vw, 4rem);
+            line-height: 1.2;
+            font-weight: 700;
+        }
+
+        h2{
+            font-size: clamp(1.25rem, 1.8vw, 2rem);
+            line-height: 1.2;
+            font-weight: 700;
+        }
+
+        #legal-document-title {
+            margin-bottom: (24/16rem);
+            text-align: center;
+        }
+
+        h2 {
+            margin: (28/16rem) 0 (10/16rem);
+        }
+
+        h3 {
+            margin: (22/16rem) 0 (8/16rem);
+            font-size: clamp(1rem, 1.6vw, 1.25rem);
+        }
+
+        p,
+        li {
+            font-size: var(--bodyFontSize);
+            line-height: 1.5;
+            color: #fff;
+        }
+
+        p {
+            margin-bottom: (12/16rem);
+        }
+
+        &__label {
+            margin-bottom: (6/16rem);
+        }
+
+        &__list {
+            margin-bottom: (14/16rem);
+            padding-left: (36/16rem);
+
+            li {
+                margin-bottom: (6/16rem);
+                padding-left: (2/16rem);
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        a {
+            color: #fff;
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 2px;
+
+            &:hover {
+                text-decoration-thickness: 2px;
+            }
+
+            &:focus-visible {
+                outline: 2px solid #fff;
+                outline-offset: 3px;
+            }
+        }
+
+        strong {
+            color: #fff;
+            font-weight: 700;
+        }
+    }
+}
+
+/* Tablet - 768px+ */
+@media only screen and (min-width: 48rem) {
+    .legal-document {
+
+        h1 {
+            margin-bottom: (28/16rem);
+        }
+
+        h2 {
+            margin-top: (30/16rem);
+        }
+
+        &__list {
+            padding-left: (42/16rem);
+        }
+    }
+}
