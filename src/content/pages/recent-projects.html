@@ -1,0 +1,72 @@
+---
+title: 'Recent Roofing & Siding Projects in Duluth, MN | HCL Construction'
+description: 'Explore recent roofing, siding, and exterior projects completed by HCL Construction in Duluth, MN and surrounding areas. View project locations and read Google reviews from local homeowners.'
+preloadImg: '/assets/optimized/hcl-hero-2.webp'
+permalink: 'recent-projects/'
+eleventyNavigation:
+    key: Recent Projects
+    order: 500
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/recent-projects.css">
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
+
+<section id="int-hero">
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" srcset="/assets/optimized/hcl-hero-2.webp">
+        <source media="(min-width: 601px)" srcset="/assets/optimized/hcl-hero-2.webp">
+        <img
+            aria-hidden="true"
+            decoding="async"
+            src="/assets/optimized/hcl-hero-2.webp"
+            alt="home exterior"
+            loading="eager"
+            width="2500"
+            height="1667"
+        >
+    </picture>
+
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Local Projects & Reviews</span>
+
+            <h1 class="cs-title">Recent Projects Around Duluth</h1>
+
+            <p class="cs-text">
+                Explore the map to see where we've completed roofing,
+                siding, and exterior projects in Duluth and surrounding
+                communities. You can also read Google reviews from
+                homeowners who've worked with our team.
+            </p>
+
+            <div class="cs-button-group">
+                <a href="/#cta-1235" class="cs-button-solid">
+                    Get a Free Inspection
+                </a>
+
+                <a href="/contact/" class="cs-button-transparent">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--               Real Work Widget               -->
+<!-- ============================================ -->
+
+ <div id="rwl-output"></div>
+
+    {% include 'components/inter-cta.html' %}
+
+{% endblock %}

@@ -309,7 +309,7 @@
     -webkit-backdrop-filter: blur(14px);
     backdrop-filter: blur(14px);
     position: fixed;
-    z-index: 10000;
+    z-index: 100;
     transition: background-color 0.35s ease, box-shadow 0.35s ease, backdrop-filter 0.35s ease;
     -webkit-backdrop-filter: blur(0);
     backdrop-filter: blur(0);
@@ -722,7 +722,7 @@
     background: transparent;
     box-shadow: none;
     position: fixed;
-    z-index: 10000;
+    z-index: 100;
     -webkit-backdrop-filter: blur(0);
     backdrop-filter: blur(0);
     transition: background-color 0.35s ease, box-shadow 0.35s ease, backdrop-filter 0.35s ease;
@@ -1684,7 +1684,7 @@
     flex-wrap: nowrap;
     justify-content: space-between;
     margin: auto;
-    max-width: 82.5rem;
+    max-width: 90rem;
     width: 96%;
     padding: 0;
   }
